@@ -1,5 +1,8 @@
 import { FaMedal } from "react-icons/fa";
 
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+
 const MarketingPage = () => {
   return (
     <div className="flex items-center justify-center flex-col">
@@ -20,7 +23,9 @@ const MarketingPage = () => {
         high rises to the home office, the way your team works is unique -
         accomplish it all with Taskify.
       </div>
-      <a className="mt-6 p-3 text-sm px-8 font-medium bg-black text-white rounded-md" href="">Get TaskFlow for free</a>
+      <Button className="mt-6 px-8 py-6">
+        <Link href={'/sign-up'}>Get TaskFlow for free</Link>
+      </Button>
     </div>
   );
 };
