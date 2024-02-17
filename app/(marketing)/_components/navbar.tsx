@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export const NavBar = () => {
   return (
-    <div className="bg-white md:flex md:justify-between fixed h-14 top-0 w-full border-b p-3">
+    <div className="bg-white md:flex md:justify-between fixed h-14 top-0 w-full border-b p-3 md:p-5 md:py-8">
       <Logo />
       <div className="flex h-full items-center justify-between md:gap-6">
         <Button size={"sm"} variant={"outline"} asChild>
